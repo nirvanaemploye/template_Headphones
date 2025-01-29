@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Headphone4 from "../../assets/Headphone4.png";
+import Headphone4 from "../../assets/headphone4.png";
 import { UpdateFollower } from "react-mouse-follower";
 
 const fadeup = (delay) => {
