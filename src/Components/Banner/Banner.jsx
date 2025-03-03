@@ -16,7 +16,7 @@ const fadeup = (delay) => {
           delay: delay,
           ease: "easeInOut",
         },
-      },
+      }
     };
   };
 const Banner = () => {
@@ -27,13 +27,10 @@ const Banner = () => {
           {/* Banner Image  */}
           <div className="mx-auto">
             <motion.img
-              initial={{ opacity: 0, x: -100, rotate: -180 }}
-              animate={{ opacity: 1, x: 0, rotate: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-              src={Headphone4}
-              alt="Headphone4"
-              className="w-[300px] md:w-[400px]"
-            />
+            initial={{ opacity: 0, x: -100, rotate: -180 }}
+            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            transition={{ duration: 0.9, delay: 0.2, ease: "easeInOut" }}
+             src={Headphone4} alt="" className="w-[300px] md:w-[400px]" />
           </div>
           {/* Banner text info */}
           <div className="flex flex-col justify-self-center">

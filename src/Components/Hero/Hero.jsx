@@ -6,34 +6,33 @@ import { FaWhatsapp } from "react-icons/fa";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 
-const fadeUp = (delay) => {
-  return {
-    hidden: {
-      opacity: 0,
-      y: 100,
-      scale: 0.5,
+const fadeUp = (delay = 0) => ({
+  hidden: {
+    opacity: 0,
+    y: 100,
+    scale: 0.5,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      duration: 0.5,
+      delay,
+      ease: "easeInOut",
     },
-    show: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        delay: delay,
-        ease: "easeInOut",
-      },
+  },
+  exit: {
+    opacity: 0,
+    y: 100,
+    scale: 0.5,
+    transition: {
+      duration: 0.2, // Slightly longer for smoother exit
+      ease: "easeInOut",
     },
-    exit: {
-      opacity: 0,
-      y: 50,
-      scale: 0.5,
-      transition: {
-        duration: 0.2,
-        ease: "easeInOut",
-      },
-    },
-  };
-};
+  },
+});
+
 const HeadphoneData = [
   {
     id: 1,
@@ -97,7 +96,7 @@ const Hero = () => {
                     variants={fadeUp(0.2)}
                     initial="hidden"
                     animate="show"
-                    exit="exit"
+                    exit="exit" // Ensure exit animation is defined
                     className="text-3xl lg:text-6xl font-bold font-varela py-2"
                   >
                     {activeData.title}
@@ -105,7 +104,7 @@ const Hero = () => {
                 </UpdateFollower>
               </AnimatePresence>
 
-              <animatePresence mode="wait">
+              <AnimatePresence mode="wait">
                 <motion.p
                   key={activeData.id}
                   variants={fadeUp(0.3)}
@@ -116,9 +115,9 @@ const Hero = () => {
                 >
                   {activeData.subtitle}
                 </motion.p>
-              </animatePresence>
+              </AnimatePresence>
 
-              <animateMotions mode="wait">
+              <AnimatePresence mode="wait">
                 <UpdateFollower
                   mouseOptions={{
                     backgroundColor: activeData.bgColor,
@@ -145,7 +144,7 @@ const Hero = () => {
                     Buy and Listen
                   </motion.button>
                 </UpdateFollower>
-              </animateMotions>
+              </AnimatePresence>
             </div>
 
             {/* Headphone list Separator */}
@@ -193,23 +192,23 @@ const Hero = () => {
 
           {/* Headphone image */}
           <div className="flex flex-col justify-end items-center">
-            <animatePresence mode="wait">
+            <AnimatePresence mode="wait">
               <motion.img
                 key={activeData.id}
-                initial={{ opacity: 0, scale: 0.9, y: 0 }}
+                initial={{ opacity: 0, scale: 0.9, y: 100 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.2, ease: easeInOut }}
                 exit={{
                   opacity: 0,
                   scale: 0.9,
                   y: 100,
-                  transform: { duration: 0.2 },
+                  transition: { duration: 0.2 },
                 }}
                 src={activeData.img}
                 alt={activeData.title}
                 className="w-[300px] md:w-[400px] xl:w-[550px]"
               />
-            </animatePresence>
+            </AnimatePresence>
           </div>
         </div>
 
