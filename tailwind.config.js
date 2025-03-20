@@ -6,12 +6,13 @@ export default {
   ],  theme: {
     extend: {
       colors: {
-        primary: '#aa6d6b',
+        primary: '#01A4E1',
+        secondary: '#FECB04',
         branDark: '#151616',
       },
 
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        custom: ['MyCustomFont', 'sans-serif'],
         varela : ['Varela', 'sans-serif'],
       },
     
