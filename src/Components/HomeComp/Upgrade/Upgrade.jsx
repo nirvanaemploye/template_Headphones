@@ -1,5 +1,5 @@
 import UpgradeBg from "../../../assets/HomeCompImg/UpgradeBg.png";
-import UpgradHead from "../../../assets/HomeCompImg/upgradHead.png";
+import UpgradHead from "../../../assets/HomeCompImg/UpgradHead.png";
 import PrimaryButton from "../../../Layout/PrimaryButton/PrimaryButton";
 
 const Upgrade = () => {
