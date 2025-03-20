@@ -1,5 +1,5 @@
 import { FaVolumeHigh } from "react-icons/fa6";
-import SafeImg from "../../../assets/AboutCompImg/AboutHero/SafeImg.png";
+import SafeImg from "../../../assets/AboutCompImg/SafeImg.png";
 import { FaDharmachakra, FaPencilRuler } from "react-icons/fa";
 import { BiSolidMedal } from "react-icons/bi";
 

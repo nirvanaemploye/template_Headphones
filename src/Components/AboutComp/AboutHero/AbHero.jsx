@@ -1,4 +1,4 @@
-import AboutBg from "../../../assets/AboutCompImg/AboutHero/AboutBg.png";
+import AboutBg from "../../../assets/AboutCompImg/AboutBg.png";
 
 const style = {
   backgroundImage: `url(${AboutBg})`,
