@@ -1,5 +1,5 @@
-import Benefit1 from "../../../assets/AboutCompImG/BenefitsImg1.png";
-import Benefit2 from "../../../assets/AboutCompImG/BenefitsImg2.png";
+import Benefit1 from "../../../assets/AboutCompImg/BenefitsImg1.png";
+import Benefit2 from "../../../assets/AboutCompImg/BenefitsImg2.png";
 
 const benefits = [
   "Immersive Sound Experience",
