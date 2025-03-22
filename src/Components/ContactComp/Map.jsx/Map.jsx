@@ -1,4 +1,4 @@
-import mapImg from "../../../assets/ContactImG/Map.png"
+import mapImg from "../../../assets/ContactImg/Map.png"
 const Map = () => {
   return (
 <section className="">
