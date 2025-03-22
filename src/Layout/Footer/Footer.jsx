@@ -1,5 +1,5 @@
 import { FaFacebookF, FaGoogle } from "react-icons/fa";
-import FooterBg from "./../../assets/footerBG.png";
+import FooterBg from "./../../assets/FooterBg.png";
 import Cards from "./../../assets/PaymentCards.png";
 import { motion } from "framer-motion";
 import { AiFillInstagram } from "react-icons/ai";
