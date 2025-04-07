@@ -1,7 +1,6 @@
 import Headphone1 from "../../../assets/HomeCompImg/headphone.png";
 import { UpdateFollower } from "react-mouse-follower";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
-import PrimaryButton from "../../../Layout/PrimaryButton/PrimaryButton";
 
 const fadeUp = (delay = 0) => ({
   hidden: {
@@ -92,14 +91,15 @@ const Hero = () => {
                     ),
                   }}
                 >
-                  <motion.div
+                  <motion.PrimaryButton
                     variants={fadeUp(0.3)}
                     initial="hidden"
                     animate="show"
                     exit="exit"
+                    className="w-full md:w-auto bg-primary text-white rounded-lg lg:py-3 lg:px-8 py-2 px-4   font-semibold text-base lg:mx-0  lg:mb-0 "  
                   >
-                    <PrimaryButton>Buy & Listen</PrimaryButton>
-                  </motion.div>
+                    Buy & Listen
+                  </motion.PrimaryButton>
                 </UpdateFollower>
               </AnimatePresence>
             </div>

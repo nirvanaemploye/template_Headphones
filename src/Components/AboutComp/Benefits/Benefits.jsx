@@ -10,7 +10,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="bg-gray-50">
+    <section  className="bg-gray-50">
       <div className="container py-32">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Image with Hover Effect */}
